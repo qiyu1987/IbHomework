@@ -53,3 +53,5 @@ Additional instructions:
 3. You don't need any backend connection
 4. Make sure you split your app into separate components
 5. We expect you to use [controlled form components](https://reactjs.org/docs/forms.html#controlled-components) as they are the best practise
+
+Bonus points if you use [Material-UI](https://material-ui-next.com) (v1)
