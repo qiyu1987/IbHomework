@@ -21,19 +21,19 @@ The app should be runnable simply by cloning the repository and running `yarn st
 
 ## Steps
 
-### Create a React app
+### 1. Create a React app
 Use the method you've learned to create a new empty React application.
 
-### Create two components
+### 2. Create two components
 Define two components in your project and name them:
 
 1. `CheckoutButton`: Should render a `<button>` element
 1. `CartItem`: Should render `<li>` element
 
-### Render a list of `CartItem`s
+### 3. Render a list of `CartItem`s
 Given the following data, render a list of `CartItems` inside your `App` component. Pass the data to the `CartItem` component as JSX props. Display both the name and price for each of them. Render the list inside of a `<ul>`.
 
-_Use the array itself as the source of your data. Do not simply copy (hard-code) the values._
+> Hint: Use the array itself as the source of your data. Do not simply copy (hard-code) the values.
 
 ```js
 const products = [
@@ -55,30 +55,34 @@ const products = [
 ]
 ```
 
-### Add a method to your `App`
+### 4. Add a method to your `App`
 In your `App` component, define a method on the class with the name `incrementQuantity`. It should take one parameter: `productId`. We will implement the functionality later.
 
-### Pass a function to the `CartItem`s
+### 5. Pass a function to the `CartItem`s
 Add a prop to the rendered `CartItem`s called `onPlusClick`. The value of the prop should be a function that calls the `incrementQuantity` method with the `id` of the product being rendered.
 
-### Update the `CartItem` to use the new prop
+> Hint: Remember that a method is a function on an object. So you need a reference to the object in order to call the function. 
+
+> Hint 2: Use an anonymous function as the value of `onPlusClick`, so you can pass the appropriate id.
+
+### 6. Update the `CartItem` to use the new prop
 After completing the previous step, you will now have a new prop inside your `CartItem`. Add a button to the rendered output. When that button is clicked it should call the function in the prop `onPlusClick`.
 
-### Implement the `incrementQuantity` method in `App`
+### 7. Implement the `incrementQuantity` method in `App`
 When called, this method should update the quantity for the given product in the `App`'s local state using `setState`. Each time the quantity should increase by one relative to its previous value.
 
 > Hint: this means your `App` component will need to have (in its local state) a collection of products and their associated quantities. You can initialize this state in the constructor, using the provided data in the previous step. The initial quantity for each product is `0`.
 
-### Interlude: Add a dependency
+### 8. Interlude: Add a dependency
 Add the following package as a dependency to your project: [react-live-clock](https://www.npmjs.com/package/react-live-clock)
 
-### Render the component
+### 9. Render the component
 Read the `react-live-clock` documentation on how to use it. Render it at the top of your `App`.
 
-### Implement the `CheckoutButton`
+### 10. Implement the `CheckoutButton`
 Similar to how you passed a function to the `CartItem`s, now pass a function to the `CheckoutButton`.
 
 When the button is clicked, the total value of the shopping cart should be displayed on the page.
 
-### Define the propTypes for `CartItem` and `CheckoutButton`
+### 11. Define the propTypes for `CartItem` and `CheckoutButton`
 Define the propTypes for all props that your components expect/use.
