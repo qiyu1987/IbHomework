@@ -8,6 +8,8 @@ _Note: we'll use the results of this homework assignment for a formal evaluation
 
 Next week we'll start to work on some multiplayer games in Typescript. To get into the vibe, this homework is to make sure you understand all the parts of your REST API and to recap the work we did in Typescript. 
 
+We will evaluate you on functionality but also on general delivery and code quality. Make sure your repo contains the stuff it needs to contain and your code is DRY. 
+
 **Send your homework to teachers@codaisseur.com before Sunday 20:00**
 
 ### Step-by-step instructions
