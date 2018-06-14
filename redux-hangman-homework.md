@@ -8,7 +8,7 @@ These are the requirements for your application on which you will be scored.
     1. the word being guessed
     1. all the letters guessed so far. 
     - _Using React _local state_ for either of the previous two pieces of data (instead of Redux state) **will cause points to be deducted.** One of the main goals of the homework is to test your understanding of Redux._
-1. When the webapp is loaded on the path is `/`, the webapp should show an initial page with a welcome message and a link "Start playing!", which links to `/hangman`. Clicking it should change the route to `/hangman`, where the rest of the game is played.
+1. When the webapp is loaded and the path is `/`, it should show an initial page with a welcome message and a link "Start playing!". The link links to `/hangman`. Clicking it should change the route to `/hangman`, where the rest of the game is played. This should be done using react-router, the page should not reload.
 1. When a game starts, a random word should be selected using the game library function `randomWord`. This will be the word the player has to guess.
 1. There should be a module in the file `src/actions/game.js` which exports two action creators. One should be called `newGame`, which creates an action of type `NEW_GAME`. The other action creator should be called `makeGuess`, and its actions should have the type `MAKE_GUESS`.
 1. The reducers should not modify the state. The functions should create copies of objects and arrays before changing them. They should be pure functions.
