@@ -35,7 +35,7 @@ After that you pick one or more toppings:
 1. Pineapple
 2. Corn
 3. Olives (green)
-4. Red unioun
+4. Red union
 5. Spinach
 6. Cherry tomatoes
 7. Chicken
