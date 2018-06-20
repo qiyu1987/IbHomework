@@ -49,9 +49,9 @@ Make sure you can change previous steps even if you already changed stuff before
 Additional instructions:
 
 1. If any base is picked there should always be a price shown for the total pizza. 
-2. The redux store should contain the state of the pizza
-3. You don't need any backend connection
+2. The Redux store should contain the state of the pizza
+3. You don't need any back end connection
 4. Make sure you split your app into separate components
-5. We expect you to use [controlled form components](https://reactjs.org/docs/forms.html#controlled-components) as they are the best practise
+5. We expect you to use [controlled form components](https://reactjs.org/docs/forms.html#controlled-components) as they are the best practice
 
 Bonus points if you use [Material-UI](https://material-ui-next.com) (v1)
