@@ -10,6 +10,15 @@ Create a React app and add Redux integration. Read about it [here](https://reade
 
 Clean up the provided `App` component by removing everything inside the `<div className="App">` element.
 
+## How to submit your results
+**Send your homework to teachers@codaisseur.com before Sunday 20:00**
+
+Clean up your code: 
+- Fix the formatting/indentation
+- Remove unnecessary code.
+
+The app should be runnable simply by cloning the repository and running `yarn start`
+
 ## Step 1 - Render some elements
 
 The following references should have enough information to complete this step:
