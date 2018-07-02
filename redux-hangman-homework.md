@@ -1,6 +1,17 @@
 # Redux Hangman Homework
 The homework assignment is to create a hangman game using React and Redux. The core logic for the game is provided as a library [here](https://gist.github.com/arienkock/d18ec2cb1246c6602651aa549c90f70b).
 
+_Note: we'll use the results of this homework assignment for a formal evaluation and as such you should write the code individually. **Plagiarism is a violation of the Academy contract and is not in your best interest. Do not discuss the contents of the assignment with your fellow students.**_
+
+## How to submit your results
+
+**Send your homework to teachers@codaisseur.com before Saturday 22:00**
+
+Clean up your code:
+
+- Fix the formatting/indentation
+- Remove unnecessary code.
+
 ## Requirements
 These are the requirements for your application on which you will be scored.
 
