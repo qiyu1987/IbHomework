@@ -22,12 +22,12 @@ These are the steps to create a basic backend (API-only):
 4. Add an endpoint `PUT /games/:id` or `PATCH /games/:id` that allows to overwrite one or more fields of the game. E.g. calling `PUT /games` with JSON body `{ "name": "new name" }` should update the name, same for color and board (not for id). 
 5. When a **game is changed** using the endpoint you made in #4 and the color field is updated, make sure (validate) that the color is one of these colors: red, blue, green, yellow, magenta
 6. When a **game starts**, your app should set the board to an empty board. The board is a two dimensional array that contains three arrays with three times the letter 'o'. (see code below\*)
-7. When a **game is changed** and the board field is updated, make sure there is only 1 move is made. That means that only one element out of the 9 can be changed into something else. You can use the function below to count the number of moves between two boards. If somebody tries to make more moves, return a `HTTP 400 Bad Request` response. If everything is fine, update the board field of the game.  \*\* 
+7. When a **game is changed** and the board field is updated, make sure only 1 move is made per request. That means that only one element out of the 9 can be changed into something else. You can use the function below to count the number of moves between two boards. If somebody tries to make more moves, return a `HTTP 400 Bad Request` response. If everything is fine, update the board field of the game.  \*\* 
 
 
 \* the start position of the board in code:
 
-```
+```js
 const defaultBoard = [
 	['o', 'o', 'o'],
 	['o', 'o', 'o'],
@@ -37,7 +37,7 @@ const defaultBoard = [
 
 \*\* a function that returns the number of changes between boards
 
-```
+```js
 const moves = (board1, board2) => 
   board1
     .map((row, y) => row.filter((cell, x) => board2[y][x] !== cell))
