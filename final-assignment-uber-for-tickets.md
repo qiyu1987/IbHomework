@@ -66,7 +66,7 @@ The minimal risk is 5% (there's no such thing as no risk) and the maximum risk i
 
 ## User stories
 
-* As a customer I want to see max. 9 events on a page and be able to click to different pages of events if there are more
+* As a customer I want to see max. 9 events on a page and be able to click 'next' to see more pages of events if there are more
 * As a customer I only want to see events that are not finished yet
 * As a customer I want to view a list of tickets when I click on an event
 * As a customer I want to view ticket details when I click on a ticket in the ticket list
