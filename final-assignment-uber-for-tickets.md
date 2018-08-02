@@ -37,7 +37,7 @@ A ticket is made for a specific event and has an author (the user that created t
 
 When you click on a ticket, you see the details of that ticket (description/price) and which event it's for. On this page you can add comments as a customer, and everybody can see all the comments.
 
-A comment has just a text and is connected to a specific ticket. It also has an author. 
+A comment has a text and is connected to a specific ticket. It also has an author. 
 
 Anybody can view events and tickets, but you have to login to add a new ticket or comment. 
 
@@ -49,13 +49,13 @@ _This is an important part of the assignment. If you only finish one thing, it s
 
 Tickets can be fraudulent, and as a customer I don't want to buy a fake ticket! Because of that we want to show to customers the risk that they are taking when buying the ticket. 
 
-On the ticket page for a specific ticket, we want to show something like:
+On the ticket page for a specific ticket, we want to show a text like:
 
 > "We calculated that the risk of this ticket being a fraud is XX%"
 
 The percentage should be calculated using the following algorithm:
 
-* if a ticket is the only ticket of the author, add 10%
+* if the ticket is the only ticket of the author, add 10%
 * if the ticket price is lower than the average ticket price for that event, that's a risk
 	* if a ticket is X% cheaper than the average price, add X% to the risk 
 	* if a ticket is X% more expensive than the average price, deduct X% from the risk, with a maximum of 10% deduction
@@ -77,7 +77,7 @@ The minimal risk is 5% (there's no such thing as no risk) and the maximum risk i
 * As a logged in customer I want to be able to create events with a name, picture (logo), date and description
 * As a customer I can see some color (red/yellow/green) indicating the fraud risk of a ticket for all tickets in the all tickets list
 
-### Bonus (should you feel bored..)
+### Bonus stories
 
 * Only admins should be able to create, edit and delete events
 * As an admin I should be able to delete any comment and edit/delete any ticket
@@ -99,16 +99,16 @@ Feel free to add any packages that you like. E.g. [MaterialUI](https://material-
 
 ## Hand-in and evaluation
 
-You will receive a time-slot for a final evaluation talk on Friday. **Before** you show up on Friday, you should share the code of your assignment (frontend + backend) with us:
+You will receive a time slot for a final evaluation talk on Friday. **Before** you show up on Friday, you should share the code of your assignment (frontend + backend) with us:
 
 * create a [Bitbucket](https://bitbucket.org) account (it's like Github, but they offer free private repositories)
 * create a private repo and push your assignment to it regularly (so even if your computer breaks you will have a backup and we can see your progress!)
-* invite teachers@codaisseur.com to join the repository
+* invite teachers@codaisseur.com (username: codaisseur-teachers) to join the repository
 
 We don't want you to publish the code of your final assignment on GitHub during the week to prevent people from copying each others work. 
 
 ### Final words
 
-* Show us what you've learned in this programme!
+* Show us what you've learned in the past weeks!
 * Have fun
 * Don't forget to sleep

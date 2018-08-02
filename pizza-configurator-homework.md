@@ -10,24 +10,22 @@ Forms are an important part of most real-world web apps. React enables you to ma
 
 What better to configure then a pizza? We're programmers after all, so let's make dinner. 
 
-**Send your homework to teachers@codaisseur.com before Sunday 20:00**
+**Send your homework to teachers@codaisseur.com before Saturday 22:00**
 
 ## Pizza Configurator
 
 You're asked to create a pizza configurator for NewAgePizza.com, a new and hip venture to get your pizza. It should be a single page that contains all the following elements. 
 
-First you pick your base. You have four options:
+First you pick your base. You have three options:
 
 1. 25cm NY Style € 8,99
 2. 30cm NY Style € 11,49
 3. 35cm NY Style € 13,49
-4. 20cm NY Style € 6,45
 
 After that you pick your sauce options:
 
 1. White sauce
-2. Red sauce
-3. Double red sauce € 1,00
+3. Red sauce € 1,00
 4. Mix it up € 1,50 
 
 After that you pick one or more toppings:
@@ -38,7 +36,6 @@ After that you pick one or more toppings:
 4. Red union
 5. Spinach
 6. Cherry tomatoes
-7. Chicken
 
 _Rules: max. 3 toppings, toppings cost € 0,50 apiece_
 
@@ -54,4 +51,4 @@ Additional instructions:
 4. Make sure you split your app into separate components
 5. We expect you to use [controlled form components](https://reactjs.org/docs/forms.html#controlled-components) as they are the best practice
 
-Bonus points if you use [Material-UI](https://material-ui-next.com) (v1)
+Bonus points if you use [Material-UI](https://material-ui.com) or find another way to make your app look and feel nice!
