@@ -10,7 +10,7 @@ Next week we'll start to work on some multiplayer games in Typescript. To get in
 
 We will evaluate you on functionality but also on general delivery and code quality. Make sure your repo contains the stuff it needs to contain and your code is DRY. 
 
-**Send your homework to teachers@codaisseur.com before Sunday 20:00**
+**Send your homework to teachers@codaisseur.com before Saturday 22:00**
 
 ### Step-by-step instructions
 
