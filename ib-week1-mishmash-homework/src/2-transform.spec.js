@@ -5,7 +5,29 @@ describe("Assignment 2 - transform", function () {
     const groupAdultsByAgeRange = require("./transform").groupAdultsByAgeRange
     assert.strictEqual(typeof groupAdultsByAgeRange, "function", "groupAdultsByAgeRange should be a function")
   })
-  it("groups array of people by age, filters out people under 18", function () {
+  it("an empty array results in an empty object", function() {
+    const groupAdultsByAgeRange = require("./transform").groupAdultsByAgeRange
+    const grouping = groupAdultsByAgeRange([])
+    assert.deepStrictEqual(grouping, {})
+  })
+  it("filters out people under the age of 18", function() {
+    const groupAdultsByAgeRange = require("./transform").groupAdultsByAgeRange
+    const grouping = groupAdultsByAgeRange([
+      { name: "pete", age: 10 },
+      { name: "dove", age: 17 },
+    ])
+    assert.deepStrictEqual(grouping, {})
+  })
+  it("only contains non-empty groups", function() {
+    const groupAdultsByAgeRange = require("./transform").groupAdultsByAgeRange
+    const grouping = groupAdultsByAgeRange([{name: "Anna", age: 31}, {name: "John", age: 32}, {name: "Hank", age: 60}])
+    const result = { 
+      '31-40': [ { name: 'Anna', age: 31 }, { name: 'John', age: 32 } ],
+      '51 and older': [ { name: 'Hank', age: 60 } ] 
+    }
+    assert.deepStrictEqual(grouping, result)
+  })
+  it("groups array of people by age", function () {
     const groupAdultsByAgeRange = require("./transform").groupAdultsByAgeRange
     const grouping = groupAdultsByAgeRange([
       { name: "pete", age: 10 },
