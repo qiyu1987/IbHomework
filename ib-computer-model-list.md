@@ -4,6 +4,8 @@ In this assignment you'll create a React app that uses both local state and Redu
 
 **Read the assignment carefully! Do not deviate from the assignment!**
 
+_Note: we'll use the results of this homework assignment for a formal evaluation and as such you should write the code individually. **Plagiarism is a violation of the Academy contract and is not in your best interest. Do not discuss the contents of the assignment with your fellow students.**_
+
 ## How to submit your results
 **Send your homework to teachers@codaisseur.com before Saturday 20:00**
 
