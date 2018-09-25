@@ -51,7 +51,7 @@ const data = {
   },
   "Sord M200 Smart Home Computer": {
     manufacturer: "Sord Computer Corporation",
-    year: 1977,
+    year: 1971,
     origin: "Japan"
   },
   "Commodore 64": {
@@ -70,7 +70,7 @@ When inspecting the resulting HTML with DevTools, it should look like this:
     <option value="">-- pick a model --</option>
     <option value="Ivel Z3">Ivel Z3 (1969)</option>
     <option value="Bally Astrocade">Bally Astrocade (1977)</option>
-    <option value="Sord M200 Smart Home Computer">Sord M200 Smart Home Computer (1977)</option>
+    <option value="Sord M200 Smart Home Computer">Sord M200 Smart Home Computer (1971)</option>
     <option value="Commodore 64">Commodore 64 (1982)</option>
 </select>
 ```
