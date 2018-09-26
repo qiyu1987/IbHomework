@@ -91,13 +91,13 @@ Add the `updateSelection` method to the `App` component class. Inside the method
 
 ### Requirements
 
-At the end of this step, changing the selected item of the drop-down should update the `App` component's local. The local state should contain the `value` of the selected option.
+At the end of this step, changing the selected item of the drop-down should update the `App` component's local state. The local state should contain the `value` of the selected option.
 
 ## Step 3 - Redux Actions
 
 Now that we can select a computer model from the drop-down, you will add a button which adds the selected item to an array in the Redux state.
 
-Your initial Redux state should be an empty array `[]`. Define a new action type which has, as its payload, the object containing all the data for the selected computer model. This is what it should look like from your Redux Dev Tools:
+Your initial Redux state should be an empty array `[]`. Look at [this section of the reader for an example](https://readest.codaisseur.com/courses/intermediate-bootcamp/09-redux/02-redux/05-array-reducer). Define a new action type which has, as its payload, the object containing all the data for the selected computer model. This is what it should look like from your Redux Dev Tools:
 
 ![action details](https://cd.sseu.re/React_App_-_Google_Chrome_2018-06-20_11.14.58.png)
 
