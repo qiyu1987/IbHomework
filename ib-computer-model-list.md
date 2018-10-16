@@ -91,7 +91,7 @@ Add the `updateSelection` method to the `App` component class. Inside the method
 
 ### Requirements
 
-At the end of this step, changing the selected item of the drop-down should update the `App` component's local state. The local state should contain the `value` of the selected option.
+At the end of this step, changing the selected item of the drop-down should update the `App` component's local state and store the selected value. Also, the value of the `<select>` element should be read from the local state.
 
 ## Step 3 - Redux Actions
 
@@ -109,13 +109,13 @@ Implement the reducer so that it handles the action and adds the selected data t
 
 If you haven't already: define a `mapStateToProps` function. It should return an object containing the list of selected items (which it gets from the Redux state). Make sure you use it while connecting your `App` component to Redux.
 
-Now that you have the data as props, create a component in your project responsible for rendering the items. 
+Now that you have the data as props, create a component in your project responsible for rendering each of the items.
 
 ### Requirements
 1. Connect your `App` component to Redux.
 1. Use a `mapStateToProps` function to select the necessary data from the Redux state.
-1. The component used to render the array of selected items should be called `ModelDetails`.
-1. Do **NOT** `connect` your `ModelDetails` component to Redux using the `react-redux` `connect` function
+1. The component used to render the item details should be called `ModelDetails`. The component is responsible for rendering a single item.
+1. You will have to use `connect` from `react-redux` on one of your components. However, do **NOT** the `ModelDetails` component, it should remain "dumb" and only contain UI code.
 1. Add `propTypes` that check/validate whether the name, manufacturer, year, and origin are correctly being passed to `ModelDetails`.
 
 _This is an example of what the HTML output should look like:_
