@@ -27,10 +27,10 @@ The app should be runnable simply by cloning the repository, installing dependen
 
 ### Assignment 1: ShoppingCart
 
-1.  You must create a module named `ShoppingCart`. The module must export a `class`, as its default export!
-1.  Given a brand new instance of the class `cart`, when calling `cart.getItems()`, should return an empty array.
-1.  The class should have a method `cart.addItem(itemName, quantity, price)`, which adds a new item to an internal array. 
-1. After adding items, a call to `cart.getItems()` should return the added items. 
+1. You must create a module named `ShoppingCart`. The module must export a `class`, as its default export!
+1. Given a brand new instance of the class in a variable `cart`, calling `cart.getItems()` should return an empty array.
+1. The class should have a method `cart.addItem(itemName, quantity, price)`, which adds a new item to an internal array.
+1. After adding items, a call to `cart.getItems()` should return an array that includes the added items.
 1. Items in the array should be in this format:
     ```js
     {
@@ -50,7 +50,7 @@ The app should be runnable simply by cloning the repository, installing dependen
     ```
     _Note: This is a named export_
 1.  The exported `groupAdultsByAgeRange` should be a function.
-1.  The function will be called and passed an array of objects. The objects represent people, with a property `name` and a property `age`. Your function should group each person **over the age of 18** into age ranges. Here are a few examples:
+1.  The function will be called with an array of objects as its argument. The objects represent people, with a property `name` and a property `age`. Your function should group each person **over the age of 18** into age ranges. Here are a few examples:
     ```js
     // Example 1
     groupAdultsByAgeRange([{name: "Henry", age: 9}, {name: "John", age: 20}])
@@ -66,8 +66,8 @@ The app should be runnable simply by cloning the repository, installing dependen
     }
     ```
 1. Notice that the groups are only added to the resulting object if they are not empty. Make sure your function does the same.
-1. Use a combination of `filter` and `reduce`.
-1.  These are the groups that your code needs to return. Use the text as the name of the property:
+1. You should use a combination of `filter` and `reduce`. If your solution uses `for`-loops instead of `reduce` for creating the final object, you will receive partial points.
+1. These are the groups that your code needs to return. Use the text as the name of the property:
     - `20 and younger`
     - `21-30`
     - `31-40`
