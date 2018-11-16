@@ -1,6 +1,6 @@
 # Spotify API
 
-You'll make an API to manage your playlists with different songs.
+You'll make an API to manage your playlists with different songs, stored in a postgres database.
 
 ## Authentication
 
@@ -13,11 +13,11 @@ You'll make an API to manage your playlists with different songs.
   * `POST /playlists`: A user should be able to create a playlist (with just a name)
   * `GET /playlists`: A user should be able to retrieve all their playlists
   * `GET /playlists/:id`: A user should be able to get a single one of their playlists, with all the songs on it (but no others).
-  * `DELETE /playlists/:id`: A user may delete a playlist, and all songs on it.
+  * `DELETE /playlists/:id`: A user may delete their playlists, and all songs on it.
 
 ## Songs
 
-  * `POST /playlists/:id/songs`: A user should be able to add songs to their playlist. A song has:
+  * `POST /playlists/:id/songs`: A user should be able to add songs to their playlists. A song has:
     * A title
     * An artist (name)
     * An album (title)
@@ -40,3 +40,8 @@ Make sure to return the right one of these status codes: 200 (ok), 201 (created)
   * `GET /artists`: A user should be able to retrieve a list of artists, with all their songs (from the different playlists).
   * `PUT /playlists/:id/songs/:id`: A user should be able to change song information, even move it to another playlist.
   * `DELETE /playlists/:id/songs/:id`: A user should be able to delete songs from their playlist.
+
+## Handing In
+
+  * Deploy to Heroku
+  * Send the link to your Heroku app, as well as the link to your Github repo to teachers@codaisseur.com
