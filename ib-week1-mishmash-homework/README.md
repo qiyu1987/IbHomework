@@ -2,11 +2,11 @@
 
 This assignment covers the first week of the Intermediate Bootcamp. This repository contains 3 test files, each covering a single task. The order of the tasks does not matter. **You can complete them in any order.** Try to complete as many of them as you can. 
 
-First run `yarn install` to install the dependencies. Run the tests with the command `yarn test`. Read the instructions in this document to know what is expected of you. The tests are meant to _help_ and _guide_ you. Passing tests do **NOT** automatically mean a successful implementation. **Again, tests do not equal score!** You can read the tests to see exactly what it's expecting, especially if you're getting errors. However, do **not** change the tests.
+First run `npm install` to install the dependencies. Run the tests with the command `npm test`. Read the instructions in this document to know what is expected of you. The tests are meant to _help_ and _guide_ you. Passing tests do **NOT** automatically mean a successful implementation. **Again, tests do not equal score!** You can read the tests to see exactly what it's expecting, especially if you're getting errors. However, do **not** change the tests.
 
-**Make sure to hand in the project the way you received it!** The tests should still work and be runnable with the `yarn test` command after you hand in your homework.
+**Make sure to hand in the project the way you received it!** The tests should still work and be runnable with the `npm test` command after you hand in your homework.
 
-You can also run the tests for each assignment individually by executing `yarn test1`, `yarn test2` and `yarn test3`.
+You can also run the tests for each assignment individually by executing `npm test1`, `npm test2` and `npm test3`.
 
 If you want to play around with your code yourself (not using the provided tests), here's a tip. Instead of adding test code to your solution files, create a new `.js` file and run it with `node`.
 
@@ -21,7 +21,7 @@ Clean up your code:
 - Fix the formatting/indentation
 - Remove unnecessary code.
 
-The app should be runnable simply by cloning the repository, installing dependencies, and running `yarn test`.
+The app should be runnable simply by cloning the repository, installing dependencies, and running `npm test`.
 
 ## Instructions
 

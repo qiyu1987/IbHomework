@@ -19,7 +19,7 @@ Clean up your code:
 - Fix the formatting/indentation
 - Remove unnecessary code.
 
-The app should be runnable simply by cloning the repository and running `yarn start`
+The app should be runnable simply by cloning the repository, install the dependencies, and running `npm run start`
 
 ## Steps
 
