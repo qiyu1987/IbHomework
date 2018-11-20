@@ -27,7 +27,7 @@ The app should be runnable simply by cloning the repository, installing dependen
 
 ### Assignment 1: ShoppingCart
 
-1. You must create a module named `ShoppingCart`. The module must export a `class`, as its default export!
+1. You must create a module named `ShoppingCart`. The module must export a `class`! In other words your `module.exports` is not an object, a string, or anything else, but only a class.
 1. Given a brand new instance of the class in a variable `cart`, calling `cart.getItems()` should return an empty array.
 1. The class should have a method `cart.addItem(itemName, quantity, price)`, which adds a new item to an internal array.
 1. After adding items, a call to `cart.getItems()` should return an array that includes the added items.
@@ -66,7 +66,7 @@ The app should be runnable simply by cloning the repository, installing dependen
     }
     ```
 1. Notice that the groups are only added to the resulting object if they are not empty. Make sure your function does the same.
-1. You should use a combination of `filter` and `reduce`. If your solution uses `for`-loops instead of `reduce` for creating the final object, you will receive partial points.
+1. You should use a combination of `filter` and `reduce`. If your solution uses `for`-loops instead of `reduce` for creating the **final object**, you will receive partial points. The use of `for`-loops is allowed, but try to construct the returned "grouping" object using `reduce`.
 1. These are the groups that your code needs to return. Use the text as the name of the property:
     - `20 and younger`
     - `21-30`
