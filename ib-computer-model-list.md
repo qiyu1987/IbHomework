@@ -114,8 +114,8 @@ Now that you have the data as props, create a component in your project responsi
 ### Requirements
 1. Connect your `App` component to Redux.
 1. Use a `mapStateToProps` function to select the necessary data from the Redux state.
-1. The component used to render the item details should be called `ModelDetails`. The component is responsible for rendering a single item.
-1. You will have to use `connect` from `react-redux` on one of your components. However, do **NOT** the `ModelDetails` component, it should remain "dumb" and only contain UI code.
+1. The component used to render the item details should be called `ModelDetails`. The component is responsible for rendering a _single_ item.
+1. You will have to use `connect` from `react-redux` on one of your components. However, do **NOT** connect the `ModelDetails` component, it should remain "dumb" and only contain UI code.
 1. Add `propTypes` that check/validate whether the name, manufacturer, year, and origin are correctly being passed to `ModelDetails`.
 
 _This is an example of what the HTML output should look like:_
