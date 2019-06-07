@@ -7,7 +7,7 @@
     "test": "mocha src/*.spec.js",
     "test1": "mocha src/1-*.spec.js",
     "test2": "mocha src/2-*.spec.js",
-    "test3": "mocha src/3-*.spec.js --watch"
+    "test3": "mocha src/3-*.spec.js"
   },
   "devDependencies": {
     "mocha": "^5.2.0"
