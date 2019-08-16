@@ -6,7 +6,7 @@ First run `npm install` to install the dependencies. Run the tests with the comm
 
 **Make sure to hand in the project the way you received it!** The tests should still work and be runnable with the `npm test` command after you hand in your homework.
 
-You can also run the tests for each assignment individually by executing `npm test1`, `npm test2` and `npm test3`.
+You can also run the tests for each assignment individually by executing `npm run test1`, `npm run test2` and `npm run test3`.
 
 If you want to play around with your code yourself (not using the provided tests), here's a tip. Instead of adding test code to your solution files, create a new `.js` file and run it with `node`.
 
