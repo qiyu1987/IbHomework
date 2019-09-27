@@ -80,18 +80,14 @@ The app should be runnable simply by cloning the repository, installing dependen
     ```js
     const {
       getTatooineResidents,
-      promiseMeAString,
     } = require("./async-functions")
     ```
-    _Note: There should be **2** named exports that should all be functions_
+    _Note: There should be **1** named export it should be a function
 
-1. The function `getTatooineResidents` 
+2. The function `getTatooineResidents` 
 - Makes a request to the starwars api endpoint: https://swapi.co/api/planets/1/ to get info about the planet Tatooine
 - Feel free to use npm to install a http client like superagent to make the request
-- Making a request with superagent should create a Promise
-- Use `.then` to get the response and make The promise resolve with `only` an array of urls for the residents of Tatooine (not the whole response)
+- Making a request with superagent should create a Promise, return that promise from the function `getTatooineResidents`
+- Add a `then()` block to the promise you return from `getTatooineResidents`
+- `return` an array of urls for the residents of Tatooine (not the whole response) from the last `.then()` block in the promise chain
    
-1. The function `promiseMeAString`
-- This function should return a Promise
-- If promiseMeAString is called with a string like: `promiseMeAString('I Promise!')`, te Promise should resolve with "You kept the Promise!"
-- If promiseMeAString is called with null like: `promiseMeAString(null)`, te Promise should reject with "You have failed me!"
